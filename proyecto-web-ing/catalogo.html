@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/catalogo.css">
+    
+
+    <title>Catalogo</title>
+</head>
+
+<body>
+
+    <header class="container-fluid bg-primary
+    d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Contactanos system@gmail.com</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fs-5 fw-bold">Sistema Clima</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sucursales.html">Sucursales</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catalogo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ingresar-planta.html">Ingresar planta</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    
+    
+   
+
+    <div class="container">
+        <div class="input-filter">
+            <input type="text" id="filter" class="filter" placeholder="Escriba una planta.." onkeyup="buscarPlanta()">
+        </div>
+
+
+        <div class="card-lists" id="card-lists">
+            <div class="row">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.w7lqQSUY3NtM1Wdpu46YpwHaHa?pid=ImgDet&rs=1">
+                    <div class="card-body">
+                        <h5 class="card-title">Limonero</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button id="btnLimonero" type="button" class="btn btn-outline-secondary">Agregar al carrito</button>
+                        <div class="emphasize">
+                            <label for="quantity">Precio: 150$</label><br>
+                            <label for="quantity">Cantidad:</label>
+                            <select id="sctLimonero" name="quantity" class="select-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://nuestraflora.com/wp-content/uploads/2019/09/manzano-de-flor10-1024x770.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Manzano</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button id="btnManzano" type="button" class="btn btn-outline-secondary">Agregar al carrito</button>
+                        <div class="emphasize">
+                            <label for="quantity">Precio: 150$</label><br>
+                            <label for="quantity">Cantidad:</label>
+                            <select id="sctManzano"name="quantity" class="select-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/R.69ff15321c309c7e8d9423eda7399c5a?rik=SPEgMJEo%2bfdvQQ&pid=ImgRaw&r=0">
+                    <div class="card-body">
+                        <h5 class="card-title">Naranjo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button id="btnNaranjo" type="button" class="btn btn-outline-secondary">Agregar al carrito</button>
+                        <div class="emphasize">
+                            <label for="quantity">Precio: 150$</label><br>
+                            <label for="quantity">Cantidad:</label>
+                            <select id="sctNaranjo"name="quantity" class="select-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.IG1Su31Ss6ZBhHLsC68gxAHaF6?pid=ImgDet&rs=1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cerezo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button id="btnCerezo" type="button" class="btn btn-outline-secondary">Agregar al carrito</button>
+                        <div class="emphasize">
+                            <label for="quantity">Precio: 150$</label><br>
+                            <label for="quantity">Cantidad:</label>
+                            <select id="sctCerezo" name="quantity" class="select-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://1.bp.blogspot.com/-v7ubJtDDpu0/VsS97f3ezFI/AAAAAAAAA24/soASsgpReR8/s1600/arbol%2Bnaranjo.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Mandarino</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button id="btnMandarino" type="button" class="btn btn-outline-secondary">Agregar al carrito</button>
+                        <div class="emphasize">
+                            <label for="quantity">Precio: 150$</label><br>
+                            <label for="quantity">Cantidad:</label>
+                            <select id="sctMandarino" name="quantity" class="select-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.bioenciclopedia.com/wp-content/uploads/2016/06/duraznero.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Duraznero</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button id="btnDuraznero" type="button" class="btn btn-outline-secondary">Agregar al carrito</button>
+                        <div class="emphasize">
+                            <label for="quantity">Precio: 150$</label><br>
+                            <label for="quantity">Cantidad:</label>
+                            <select id="sctDuraznero" name="quantity" class="select-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="reserva" style="text-align:center">
+            <h3 class="text-primary">Reserva</h3>
+            <p id="limonero"></p>
+            <p id="manzano"></p>
+            <p id="naranjo"></p>
+            <p id="cerezo"></p>
+            <p id="mandarino"></p>
+            <p id="duraznero"></p>
+            <p id="total">Total: </p>
+            <label class="form-label">Seleccionar Sucursal:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="Todoplantas">Todo plantas</option>
+                    <option value="Jardinpacifico">Jardín pacífico</option>
+                    <option value="Viveroroby">Vivero roby</option>
+                    <option value="Elbotánico">El botánico</option>
+                </select>
+            
+                
+                <label  id="fechaRetiro" for="start">Seleccione la fecha de retiro:</label>
+
+                <input type="date" id="start" name="trip-start"
+                value="2022-06-25"
+                min="2022-01-01" max="2023-12-31">
+
+                <button id="ingresarReserva" type="submit" class="btn btn-primary">Hacer reserva</button>
+
+            
+        </div>
+
+    </div>
+    <br>
+
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3">Sistema botánico &copy; Todos los Derechos Reservados 2022 </p>
+        <div id="iconos">
+            <a href=""><i class="bi bi-spotify"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="./js/catalogo.js"></script>
+
+</body>
+
+</html>

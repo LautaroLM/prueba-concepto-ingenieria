@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/ingresar-planta.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+
+    <title>Ingresar planta</title>
+</head>
+
+<body>
+
+    <header class="container-fluid bg-primary
+    d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Contactanos system@gmail.com</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fs-5 fw-bold">Sistema Clima</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catalogo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ingresar-planta.html">Ingresar planta</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="col d-flex justify-content-center">
+        <div class="card" id="formularioPlanta">
+            <h2>Ingrese la planta</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="codigoPlanta" class="form-label">Ingresar código:</label>
+                    <input type="text" class="form-control" id="codigoPlanta" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="fasePlanta" class="form-label">Seleccionar fase:</label>
+                    <select id="fasePlanta" class="form-select" aria-label="Default select example">
+                        <option value="Germinación">Germinación</option>
+                        <option value="Brote">Brote</option>
+                        <option value="Crecimiento">Crecimiento</option>
+                        <option value="Reproducción">Reproducción</option>
+                    </select>
+                </div>
+
+
+
+
+                <div class="mb-3">
+                    <label for="familiaPlanta" class="form-label">Seleccionar familia:</label>
+                    <select id="selectFamilia" class="form-select" aria-label="Default select example">
+
+                    </select>
+
+
+                    <!-- PESTAÑA MODAL -->
+                    <div class="container mt-3">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Agregar
+                            Familia</button>
+
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-tittle">Nueva Familia</h5>
+                                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="nombreComunFamilia" class="form-label">Ingresar nombre
+                                                común:</label>
+                                            <input type="text" class="form-control" id="nombreComunFamilia"
+                                                required="required">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nombreCientificoFamilia" class="form-label">Ingresar nombre
+                                                científico:</label>
+                                            <input type="text" class="form-control" id="nombreCientificoFamilia"
+                                                required="required">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="cuidadosFamilia" class="form-label">Ingresar cuidados:</label>
+                                            <input type="text" class="form-control" id="cuidadosFamilia"
+                                                required="required">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="sueloFamilia" class="form-label">Seleccionar suelo:</label>
+                                            <select id="sueloFamilia"class="form-select" aria-label="Default select example">
+                                                <option value="Basico">Basico</option>
+                                                <option value="Arido">Arido</option>
+                                                <option value="Neutro">Neutro</option>
+                                                <option value="Humedo">Humedo</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="tamañoFamilia" class="form-label">Seleccionar tamaño:</label>
+                                            <select id="tamañoFamilia" class="form-select" aria-label="Default select example">
+                                                <option value="Hierba">Hierba</option>
+                                                <option value="Mata">Mata</option>
+                                                <option value="Arbusto">Arbusto</option>
+                                                <option value="Árbol">Árbol</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="reproduccionFamilia" class="form-label">Seleccionar
+                                                reproducción:</label>
+                                            <select id="reproduccionFamilia" class="form-select" aria-label="Default select example">
+                                                <option value="Semilla">Semilla</option>
+                                                <option value="Espora">Espora</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="duracionFamilia" class="form-label">Seleccionar
+                                                duración:</label>
+                                            <select id="duracionFamilia" class="form-select" aria-label="Default select example">
+                                                <option value="Anual">Anual</option>
+                                                <option value="Bianual">Bianual</option>
+                                                <option value="Perenne">Perenne</option>
+                                            </select>
+                                        </div>
+                                        <button id="ingresarFamilia" type="submit" class="btn btn-primary">Agregar</button>
+
+                                    </div>
+                                    <div class="modal-foter">
+                                        <button id="cerrarModal" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="mb-3">
+                    <label for="fila" class="form-label">Foto:</label>
+                    <input type="file" name="adjunto" accept=".jpg" multiple />
+                </div>
+                <div class="mb-3">
+                    <h5>Ubicación</h5>
+                    <div class="mb-3">
+                        <label for="nombreAlmacen" class="form-label">Ingresar nombre del almacen:</label>
+                        <input type="text" class="form-control" id="nombreAlmacen" required="required">
+                    </div>
+                    <label for="columna" class="form-label">Columna:</label>
+                    <input type="number" class="form-control" id="columna" required="required">
+                    <label for="columna" class="form-label">Fila:</label>
+                    <input type="number" class="form-control" id="fila" required="required">
+                </div>
+
+            </form>
+            <button id="ingresarPlanta" type="submit" class="btn btn-primary">Ingresar planta</button>
+        </div>
+    </div>
+
+
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3">Sistema botánico &copy; Todos los Derechos Reservados 2022 </p>
+        <div id="iconos">
+            <a href=""><i class="bi bi-spotify"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="./js/ingresarPlanta.js"></script>
+</body>
+
+
+
+</html>
